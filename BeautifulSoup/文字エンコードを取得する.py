@@ -9,7 +9,7 @@ def get_encoding(soup):
     見つからなければ空文字列を返す.
 
     Parameters:
-        soup (bs4.BeautifulSoup): .
+        soup (bs4.BeautifulSoup)
 
     Returns:
         str: 文字エンコード。見つからなければ空文字列."""
