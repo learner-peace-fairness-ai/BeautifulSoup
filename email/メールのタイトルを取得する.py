@@ -3,7 +3,7 @@ from email.header import decode_header
 from typing import Union
 
 
-def get_mail_subject(mail: Union[email.message.EmailMessage, email.message.Message]):
+def get_subject(mail: Union[email.message.EmailMessage, email.message.Message]):
     """メールのタイトルを取得する
 
     Parameters:
