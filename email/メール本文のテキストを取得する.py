@@ -1,5 +1,5 @@
-from typing import Union
 import email
+from typing import Union
 
 
 def get_email_body_text(mail: Union[email.message.EmailMessage, email.message.Message]):
