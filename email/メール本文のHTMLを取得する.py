@@ -2,7 +2,7 @@ import email
 from typing import Union
 
 
-def get_body_html(mail: Union[email.message.EmailMessage, email.message.Message]):
+def get_body_html(mail: Union[email.message.EmailMessage, email.message.Message]) -> str:
     """メール本文のHTMLを取得する
 
     Parameters:
