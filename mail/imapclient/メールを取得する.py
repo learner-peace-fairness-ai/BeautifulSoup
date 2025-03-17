@@ -15,6 +15,6 @@ def get_mail(client: imapclient.IMAPClient, mail_id: str) -> (Union[email.messag
     Returns:
         email.message.EmailMessage | email.message.Message: メールオブジェクト."""
     
-    raw_message = client.fetch(mail_id, ['BODY[]'])
-    raw_email = raw_message[mail_id][b'BODY[]']
+    raw_message = client.fetch(mail_id, ["BODY[]"])
+    raw_email = raw_message[mail_id][b"BODY[]"]
     return BytesParser().parsebytes(raw_email)
